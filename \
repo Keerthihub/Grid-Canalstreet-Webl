@@ -23,5 +23,6 @@ body {
 
 .hero {
   padding: 250px 60px 120px;
+  font-family: ;
 }
 
