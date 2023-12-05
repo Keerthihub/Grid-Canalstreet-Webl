@@ -4,24 +4,90 @@
 @import url('https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display&display=swap');
 
 @font-face {
-  font-family: "Nantes-Bold";
-  src: url("../../fonts/") format("woff2"),
+  font-family: Ogg-Thin;
+  src: url("../../fonts/Ogg-Thin-BF646c18fc4eb07.otf") format("opentype");
 }
 
+@font-face {
+  font-family: Ogg-Light;
+  src: url("../../fonts/Ogg-Light-BF646c18fbb73f7.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Ogg-Regular;
+  src: url("../../fonts/Ogg-Regular-BF646c18fc3ed57.otf") format("opentype");
+}
+
+@font-face {
+  font-family: OggText-Light;
+  src: url("../../fonts/OggText-Light-BF646c18fa863ce.otf") format("opentype");
+}
+
+@font-face {
+  font-family: OggText-Medium;
+  src: url("../../fonts/OggText-Medium-BF646c18fbe3cb2.otf") format("opentype");
+}
+
+
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 img {
   max-width: 100%;
   width: 100%;
+  background-size: cover;
 }
 
 body {
-  line-height: 1.325;
+  line-height: 1.2;
+  background-color: white;
+}
+
+main {
+  width: calc(100% - 180px);
 }
 
 .hero {
   padding: 250px 60px 120px;
+
+  h1 {
+    font-family: Ogg-Light;
+    font-size: 4.8em;
+    max-width: 1030px;
+    width: 100%;
+  }
+}
+
+.hero-img {
+  margin-bottom: 60px;
+
+ }
+
+.market-section {
+  padding: 60px;
+
+  h1 {
+    font-family: Ogg-Light;
+    font-size: 8.6rem;
+    max-width: 1030px;
+    width: 100%;
+    padding-bottom: 60px;
+  }
+
+  .market {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.8em;
+
+    .market-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      font-family: 'B612 Mono', monospace;
+      font-size: 12px;
+      line-height: 1.8em; 
+    }
+  }
 }
 
