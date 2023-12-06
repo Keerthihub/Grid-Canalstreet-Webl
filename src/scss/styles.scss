@@ -78,7 +78,7 @@ main {
   .market {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3.8em;
+    gap: 3em;
 
     .market-list {
       display: flex;
@@ -86,7 +86,7 @@ main {
       gap: 2em;
       font-family: 'B612 Mono', monospace;
       font-size: 12px;
-      line-height: 1.8em; 
+      line-height: 1.6em; 
     }
   }
 }
