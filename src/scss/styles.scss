@@ -91,3 +91,47 @@ main {
   }
 }
 
+.home-events {
+  padding: 60px 60px 150px;
+
+  .home-events-header, .home-events__row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+   h1 {
+    font-family: Ogg-Light;
+    font-size: 6.6rem;
+    max-width: 1030px;
+    width: 100%;
+    padding-bottom: 60px;
+  }
+
+  .home-events__row-item {
+    font-family: 'B612 Mono', monospace;
+    text-align: center;
+
+    p {
+     
+      font-size: 12px;
+      line-height: 1.6em;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    span {
+      margin: 0 auto 15px;
+    }
+ 
+  }
+
+  a {
+    grid-column-start: span 3;
+  }
+
+}
