@@ -93,16 +93,7 @@ main {
 
 .home-events {
   padding: 60px 60px 150px;
-
-  .home-events-header, .home-events__row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 60px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
+  
    h1 {
     font-family: Ogg-Light;
     font-size: 6.6rem;
@@ -111,27 +102,70 @@ main {
     padding-bottom: 60px;
   }
 
+  .home-events-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home-events__row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 10px;
+
+
   .home-events__row-item {
     font-family: 'B612 Mono', monospace;
     text-align: center;
+    justify-items: center;
+    padding-top: 60px;
 
-    p {
+    span {
+      margin: 0 auto 15px;
+      font-size: 12px;
+      text-align: center;
+      display: block;
+    }
      
+    p {
       font-size: 12px;
       line-height: 1.6em;
       align-items: center;
       justify-content: center;
       text-align: center;
-    }
-
-    span {
-      margin: 0 auto 15px;
+      margin: 0;
+      padding: 0;
     }
  
   }
+  
+}
 
-  a {
+.home-events__row > a {
+    padding: 20px;
+    width: 180px;
+    position: relative;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
     grid-column-start: span 3;
+    background-color: green;
   }
 
 }
+
+.home-events__row {
+  width: 100%; 
+  background-image: linear-gradient(90deg,#000 50%,transparent 0),linear-gradient(90deg,#000 50%,transparent 0),linear-gradient(90deg,#000 50%,transparent 0),linear-gradient(90deg,#000 50%,transparent 0);
+  background-size: 30px 100%; /* Adjust the size of dashes and gaps */
+  transition: background-position 0.2s ease-in-out; /* Smooth transition */
+  background-position: 0 0,0 100%,left 14px,0 calc(100% - 14px);
+  background-repeat: repeat-x,repeat-x;
+  background-size: 24px 1px,24px 1px,24px 1px,24px 1px;
+}
+
+
